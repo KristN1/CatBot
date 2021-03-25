@@ -28,7 +28,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == "cat":
+    if message.content == "cat" or message.content == "pussy":
         embed = sendCat(message)
         await message.channel.send(embed=embed)
 
