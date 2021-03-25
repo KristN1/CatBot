@@ -29,14 +29,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    bot = client.get_user(824410708099072000)
-    bot_ok = "<@!824410708099072000>"
-
     if message.content == "cat":
-        embed = sendCat(message)
-        await message.channel.send(embed=embed)
-
-    elif message.content == bot_ok:
         embed = sendCat(message)
         await message.channel.send(embed=embed)
 
